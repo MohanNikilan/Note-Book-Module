@@ -1,0 +1,23 @@
+{
+  "name": "pdfjs-build",
+  "homepage": "https://github.com/RiptideCloud/pdfjs-build",
+  "authors": [
+    "Max Burstein  <max.burstein@riptidesoftware.com>"
+  ],
+  "description": "Fully compiled version of Mozilla's pdf.js library. ",
+  "main": "pdf.js",
+  "keywords": [
+    "pdf.js",
+    "pdfjs",
+    "pdf"
+  ],
+  "license": "MIT",
+  "_release": "87e7aef6e8",
+  "_resolution": {
+    "type": "commit",
+    "commit": "87e7aef6e8"
+  },
+  "_source": "https://github.com/RiptideCloud/pdfjs-build.git",
+  "_target": "87e7aef6e8",
+  "_originalSource": "pdfjs-build"
+}

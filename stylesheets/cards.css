@@ -1,0 +1,236 @@
+/**
+ * Sass styles related to module cards
+ */
+/* line 8, ../sass/cards.scss */
+.module_card {
+  display: table;
+  height: 250px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 17, ../sass/cards.scss */
+.module_card:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+/* line 21, ../sass/cards.scss */
+.module_card > div {
+  display: table-cell;
+  height: 290px;
+}
+/* line 25, ../sass/cards.scss */
+.module_card .card_banner {
+  width: 300px;
+  vertical-align: middle;
+  overflow: hidden;
+  background-size: 100% 100%;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: inset 0 0 5px 2px;
+  background-image: url("../images/module_banner.png");
+  position: relative;
+  z-index: 3;
+  -webkit-transition: border-radius .2s;
+  transition: border-radius .2s;
+}
+/* line 39, ../sass/cards.scss */
+.module_card .card_title {
+  display: block;
+  width: 230px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px auto;
+  letter-spacing: 1px;
+}
+/* line 51, ../sass/cards.scss */
+.module_card.animated_card .card_banner {
+  border-radius: 8px;
+}
+/* line 54, ../sass/cards.scss */
+.module_card.animated_card:hover .card_banner {
+  border-radius: 8px 0px 0px 8px;
+}
+/* line 59, ../sass/cards.scss */
+.module_card.animated_card.isOpen .card_banner {
+  border-radius: 8px 0px 0px 8px;
+}
+/* line 63, ../sass/cards.scss */
+.module_card.animated_card:hover .card_summary {
+  left: 30px;
+}
+/* line 66, ../sass/cards.scss */
+.module_card.animated_card .card_summary {
+  left: 5px;
+}
+/* line 70, ../sass/cards.scss */
+.module_card .card_summary {
+  width: 290px;
+  padding: 0px 15px;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+  border-radius: 0px 7px 7px 0px;
+  border-color: #d5d5d5;
+  box-shadow: inset 6px 0px 13px -5px;
+  -webkit-transition: left .4s ease-in-out;
+  transition: left .4s ease-in-out;
+  -webkit-transition-property: left;
+  /* Safari */
+  transition-property: left;
+}
+/* line 84, ../sass/cards.scss */
+.module_card .card_summary .card_label {
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+}
+/* line 89, ../sass/cards.scss */
+.module_card .card_summary .card_section {
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+/* line 93, ../sass/cards.scss */
+.module_card .card_summary .card_section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+/* line 96, ../sass/cards.scss */
+.module_card .card_summary .card_section p {
+  margin-bottom: 7px;
+  font-size: 12.5px;
+}
+/* line 100, ../sass/cards.scss */
+.module_card .card_summary .card_section .ellipsis {
+  width: 245px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 108, ../sass/cards.scss */
+.module_card .card_summary .module_brief {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 52.5px;
+  /* Fallback for non-webkit */
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12.5px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/**
+ * Sass styles related to unit cards
+ */
+/* line 131, ../sass/cards.scss */
+.unit_card {
+  width: 300px;
+  height: 300px;
+  color: #000;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 2px solid #d5d5d5;
+  position: relative;
+}
+/* line 143, ../sass/cards.scss */
+.unit_card:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+/* line 147, ../sass/cards.scss */
+.unit_card .unit_status {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  height: 25px;
+  padding: 2px 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  letter-spacing: 0.6px;
+}
+/* line 158, ../sass/cards.scss */
+.unit_card .unit_header {
+  display: table;
+}
+/* line 160, ../sass/cards.scss */
+.unit_card .unit_header .unit_banner {
+  display: table-cell;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+/* line 167, ../sass/cards.scss */
+.unit_card .unit_header .unit_title {
+  display: table-cell;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0px 0px 12px;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+/* line 180, ../sass/cards.scss */
+.unit_card .unit_desc {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 58.8px;
+  /* Fallback for non-webkit */
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 10px 0px 20px;
+}
+/* line 195, ../sass/cards.scss */
+.unit_card .unit_breif .unit_breif_row i {
+  margin-right: 10px;
+  color: #99aaba;
+}
+/* line 201, ../sass/cards.scss */
+.unit_card .unit_actions {
+  border-top: 1px solid #ccc;
+  margin: 20px 0px 0px;
+  padding: 5px 0px;
+}
+
+/*
+   Common css
+ */
+/* line 211, ../sass/cards.scss */
+.text-button-blue {
+  background-color: transparent;
+  color: #00A9EE;
+  padding: 3px 10px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 25px;
+}
+
+/**
+    Status styles added for the unit styles.
+ */
+/* line 230, ../sass/cards.scss */
+.in-progress-status {
+  color: #fff;
+  background-color: #fd9e29;
+}
+
+/* line 235, ../sass/cards.scss */
+.in-complete-status {
+  color: #fff;
+  background-color: #fd9e29;
+}

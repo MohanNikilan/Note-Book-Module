@@ -1,0 +1,199 @@
+/* line 2, ../sass/buddy-panel.scss */
+.buddy_panel {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 70px;
+  height: 100vh;
+  padding: 10px;
+  background-color: #101d29;
+  overflow-y: auto;
+}
+/* line 13, ../sass/buddy-panel.scss */
+.buddy_panel .add_buddy_icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 21, ../sass/buddy-panel.scss */
+.buddy_icon {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 30, ../sass/buddy-panel.scss */
+.buddy_icon svg {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+}
+/* line 36, ../sass/buddy-panel.scss */
+.buddy_icon.buddy_inactive:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 47, ../sass/buddy-panel.scss */
+.buddy_icon .buddy_edit {
+  display: none;
+}
+/* line 52, ../sass/buddy-panel.scss */
+.buddy_icon.buddy_editable:hover .buddy_edit {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 3px;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+}
+
+/* line 63, ../sass/buddy-panel.scss */
+.add_buddy_modal {
+  padding: 0px;
+}
+/* line 65, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_header {
+  padding: 10px 20px;
+  position: relative;
+}
+/* line 69, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_header .modal_title {
+  font-size: 25px;
+  color: #CE7869;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+/* line 75, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_header .modal_meta {
+  font-size: 14px;
+  color: #9DBEDD;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+/* line 82, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_header .sample_buddy {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+/* line 89, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body {
+  background-color: #101d29;
+  padding: 10px 20px;
+  max-height: 500px;
+  overflow: auto;
+}
+/* line 95, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .step_title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.9px;
+  margin: 10px 0px;
+}
+/* line 102, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .step_title .step_number {
+  color: #82A4C3;
+}
+/* line 107, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_color_option {
+  max-width: 75px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+/* line 114, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_color_option .color_sample {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 0px auto;
+}
+/* line 122, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_color_option .color_name {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #82A4C3;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+/* line 133, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_color_option:hover .color_sample, .add_buddy_modal .modal_body .buddy_color_option.selected .color_sample {
+  border: 3px solid #bfe0ff;
+}
+/* line 139, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_animal {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+/* line 144, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_animal svg {
+  height: 80px;
+  width: 80px;
+}
+/* line 148, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_animal svg path {
+  fill: #374B5E;
+}
+/* line 153, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_animal .buddy_animal_name {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+/* line 161, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_body .buddy_animal:hover path, .add_buddy_modal .modal_body .buddy_animal.selected path {
+  fill: #bfe0ff;
+}
+/* line 168, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_footer {
+  height: 70px;
+  padding: 20px;
+}
+/* line 173, ../sass/buddy-panel.scss */
+.add_buddy_modal .modal_footer .removeBuddy i {
+  color: #bd2b2b;
+  font-size: 25px;
+}
+
+/*
+    Common css that can be kept at a single place.
+*/
+/* line 187, ../sass/buddy-panel.scss */
+.blue_round_button {
+  background-color: #00a9ee;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 25px;
+}
+
+/* line 197, ../sass/buddy-panel.scss */
+.text_button {
+  background-color: #fff;
+  color: #949494;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 25px;
+}

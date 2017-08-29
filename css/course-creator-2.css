@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/*Blue color variables*/
+/*Orange color variables*/
+/* line 20, ../scss/course-creator-2.scss */
+html {
+  height: 100%;
+}
+
+/* line 23, ../scss/course-creator-2.scss */
+body {
+  background: linear-gradient(135deg, #e5a426, #ae208c);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 32, ../scss/course-creator-2.scss */
+.course_creator_header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 5px 15px;
+  box-shadow: 1px 0px 13px #000;
+}
+/* line 39, ../scss/course-creator-2.scss */
+.course_creator_header .back_to_group {
+  padding: 0px 15px 0px 10px;
+  border-right: 1px solid #ccc;
+  margin-right: 15px;
+}
+/* line 45, ../scss/course-creator-2.scss */
+.course_creator_header .course_heading span {
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 25px;
+}
+/* line 52, ../scss/course-creator-2.scss */
+.course_creator_header .course_actions ul {
+  margin: 0px;
+}
+/* line 55, ../scss/course-creator-2.scss */
+.course_creator_header .course_actions ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 12px;
+  color: #999999;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+/* line 64, ../scss/course-creator-2.scss */
+.course_creator_header .course_actions ul li.active, .course_creator_header .course_actions ul li:hover {
+  border-bottom: 3px solid #ffc14e;
+}
+
+/* line 72, ../scss/course-creator-2.scss */
+.course_creator {
+  background: #fff;
+  box-shadow: 0px 2px 6px #000;
+  margin: 0px auto;
+  padding: 0px 0px;
+  max-width: 100vw;
+}
+/* line 80, ../scss/course-creator-2.scss */
+.course_creator > .columns {
+  padding: 0px;
+  height: 100%;
+}
+/* line 84, ../scss/course-creator-2.scss */
+.course_creator .course_editor {
+  height: 80vh;
+  position: relative;
+  /*Overriding default*/
+  /*Custom css*/
+  /* Course edit in the edit mode. */
+}
+/* line 89, ../scss/course-creator-2.scss */
+.course_creator .course_editor .accordion .accordion-navigation > .content, .course_creator .course_editor .accordion dd > .content {
+  padding: 0px;
+}
+/* line 94, ../scss/course-creator-2.scss */
+.course_creator .course_editor > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 99, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  width: 100%;
+  background-color: #fff;
+  max-height: 100%;
+  overflow-y: auto;
+  height: inherit;
+}
+/* line 108, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd {
+  border-bottom: 2px solid #9abfd9;
+  transition: border-color 1s ease;
+  -webkit-transition: border-color 1s ease;
+}
+/* line 112, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation {
+  position: relative;
+}
+/* line 115, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation > a {
+  padding-left: 50px;
+}
+/* line 117, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation > a:before {
+  content: '›';
+  position: absolute;
+  left: 23px;
+  font-size: 45px;
+  line-height: 20px;
+  color: #acd4fa;
+}
+/* line 126, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title {
+  background: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  color: #3c5267;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+}
+/* line 133, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title .edit_entity {
+  color: #c9d1d8;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  display: block;
+  position: relative;
+  display: none;
+}
+/* line 142, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title .edit_entity i {
+  display: none;
+  font-size: 20px;
+}
+/* line 147, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title .edit_entity > .entity_actions {
+  margin-bottom: 0px;
+}
+/* line 150, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title .edit_entity > .entity_actions li {
+  white-space: nowrap;
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+/* line 160, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation a.entity-title:hover .edit_entity {
+  display: block;
+}
+/* line 166, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation.active > a:before {
+  content: 'ˇ';
+  font-size: 45px;
+  line-height: 55px;
+  color: #d7d7d7;
+}
+/* line 173, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation .course-activities {
+  margin: 0px;
+}
+/* line 175, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation .course-activities > li {
+  list-style: none;
+  border-top: 1px solid #e9e9e9;
+  padding: 10px 0px 10px 90px;
+  background: inherit;
+  transition: border-color 1s ease;
+  -webkit-transition: border-color 1s ease;
+}
+/* line 182, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation .course-activities > li > a {
+  color: #7ca0d0;
+  width: 100%;
+  display: block;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+}
+/* line 191, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course_tree .course-lessons dd.accordion-navigation .content {
+  background: inherit;
+}
+/* line 200, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section {
+  width: 0%;
+  display: inline-block;
+  opacity: 0;
+  transition: width 1s ease;
+  -webkit-transition: width 1s ease;
+  height: inherit;
+  max-height: 100%;
+  overflow-y: auto;
+}
+/* line 209, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-header {
+  height: 100px;
+  background-color: #e5f1f6;
+  border-bottom: 1px solid #e6e6e7;
+}
+/* line 214, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-header .header-left {
+  padding: 29px 0px;
+}
+/* line 217, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-header .header-left > span {
+  color: #3c5264;
+  font-weight: 600;
+  font-size: 20px;
+  font-size: 28px;
+  margin-right: 10px;
+}
+/* line 226, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-header .custom_dropdown {
+  margin: 40px 35px 0px;
+}
+/* line 231, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-tool .editor_actions {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  height: 55px;
+}
+/* line 235, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-tool .editor_actions ul {
+  margin: 0px;
+}
+/* line 237, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-tool .editor_actions ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 240, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-tool .editor_actions ul li:not(:first-child) {
+  padding: 1px 30px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+/* line 246, ../scss/course-creator-2.scss */
+.course_creator .course_editor .course-editor-section .editor-tool .editor_actions ul li span {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #999;
+  padding: 15px 5px;
+  cursor: pointer;
+}
+/* line 261, ../scss/course-creator-2.scss */
+.course_creator .course_editor .add-lesson {
+  margin: 10px 50px;
+}
+/* line 267, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode button {
+  color: #5097b5;
+  border-color: #5097b5;
+  transition: color 1s ease, border-color 1s ease;
+  -webkit-transition: color 1s ease, border-color 1s ease;
+}
+/* line 272, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  width: 20%;
+  background-color: #2a6882;
+}
+/* line 278, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd {
+  border-color: #295566;
+  transition: border-color 1s ease;
+  -webkit-transition: border-color 1s ease;
+}
+/* line 283, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a {
+  background: inherit;
+  color: #8fbbd8;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+}
+/* line 288, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity {
+  width: 20px;
+}
+/* line 290, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity i {
+  display: block;
+}
+/* line 294, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity > .entity_actions {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: -20px;
+  margin: 0px 10px;
+  z-index: 100;
+  background: #fff;
+  color: #999999;
+  border-radius: 3px;
+}
+/* line 305, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity > .entity_actions li {
+  display: block;
+  margin: 0px;
+  padding: 5px 25px;
+}
+/* line 310, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity > .entity_actions li:hover {
+  background-color: #d5f2ff;
+}
+/* line 316, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation a .edit_entity:hover > .entity_actions {
+  display: block;
+}
+/* line 322, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation .course-activities > li {
+  transition: border-color 1s ease;
+  -webkit-transition: border-color 1s ease;
+  padding-right: 20px;
+  border-color: #295566;
+  border-bottom: 1px solid transparent;
+}
+/* line 329, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation .course-activities > li:not(:last-child):hover, .course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation .course-activities > li:not(:last-child).active {
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #50c0f8;
+}
+/* line 336, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course_tree .course-lessons dd.accordion-navigation .course-activities > li > a {
+  color: #edf6ff;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+}
+/* line 347, ../scss/course-creator-2.scss */
+.course_creator .course_editor.edit_mode .course-editor-section {
+  width: 79.5%;
+  opacity: 1;
+  overflow-x: auto;
+  transition: width 1.9s ease, opacity 4s ease;
+  -webkit-transition: width 1.9s ease, opacity 4s ease;
+}
+
+/* line 364, ../scss/course-creator-2.scss */
+.tile_modal .editor_modal_content .modal_tile .th {
+  width: 100%;
+  height: 210px;
+  box-shadow: none;
+}
+/* line 369, ../scss/course-creator-2.scss */
+.tile_modal .editor_modal_content .modal_tile .th > img {
+  height: 180px;
+  width: 100%;
+}
+/* line 374, ../scss/course-creator-2.scss */
+.tile_modal .editor_modal_content .modal_tile .th > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+}
+
+/* line 387, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content > div {
+  width: 100%;
+}
+/* line 389, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content > div > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 394, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content .app_row {
+  margin-bottom: 39px;
+}
+/* line 397, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content .app_row .app_image {
+  padding: 10px;
+}
+/* line 400, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content .app_row .app_image > div {
+  border: 1px solid #999;
+  height: 222px;
+}
+/* line 406, ../scss/course-creator-2.scss */
+#appModal .editor_modal_content .app_row .app_desc {
+  padding-left: 10px;
+}
+
+/* line 414, ../scss/course-creator-2.scss */
+.editor_modal .editor_modal_title {
+  font-size: 20px;
+  color: #3c5264;
+}
+/* line 419, ../scss/course-creator-2.scss */
+.editor_modal .editor_modal_actions > a {
+  display: inline-block;
+}
+/* line 422, ../scss/course-creator-2.scss */
+.editor_modal .editor_modal_actions > a.close-reveal-modal {
+  font-size: small;
+  line-height: inherit;
+  position: inherit;
+  color: #c601bc;
+}
+
+/* line 433, ../scss/course-creator-2.scss */
+.custom_dropdown {
+  font-size: 15px;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+}
+/* line 439, ../scss/course-creator-2.scss */
+.custom_dropdown > a {
+  height: 30px;
+  display: block;
+}
+/* line 445, ../scss/course-creator-2.scss */
+.custom_dropdown:hover .dropdown_content {
+  display: block;
+}
+/* line 450, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content {
+  background-color: #fff;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  border: 1px solid #ccc;
+}
+/* line 458, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content.left_align {
+  left: -10px;
+}
+/* line 462, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content.right_align {
+  right: -10px;
+}
+/* line 466, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content li {
+  padding: 5px 25px;
+  list-style: none;
+  white-space: nowrap;
+}
+/* line 471, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content li a {
+  margin: 0px;
+}
+/* line 475, ../scss/course-creator-2.scss */
+.custom_dropdown .dropdown_content li:hover {
+  background-color: #d5f2ff;
+}
+/* line 482, ../scss/course-creator-2.scss */
+.custom_dropdown a {
+  color: #999999;
+  margin-left: 25px;
+}
+
+/* line 488, ../scss/course-creator-2.scss */
+.button-hollow-purple {
+  background: inherit;
+  border: 2px solid #c601bc;
+  border-radius: 5px;
+  color: #c601bc;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  padding: 3px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 1s ease, border-color 1s ease;
+  -webkit-transition: color 1s ease, border-color 1s ease;
+}
+
+/* line 501, ../scss/course-creator-2.scss */
+.button-hollow-grey {
+  background: inherit;
+  border: 2px solid #c9d1d8;
+  border-radius: 5px;
+  color: #c9d1d8;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  padding: 3px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 1s ease, border-color 1s ease;
+  -webkit-transition: color 1s ease, border-color 1s ease;
+}
+
+/* line 514, ../scss/course-creator-2.scss */
+.button-hollow-blue {
+  background: inherit;
+  border: 2px solid #5097b5;
+  border-radius: 5px;
+  color: #5097b5;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  padding: 2px 10px;
+  transition: color 1s ease, border-color 1s ease;
+  -webkit-transition: color 1s ease, border-color 1s ease;
+}
+
+/* line 525, ../scss/course-creator-2.scss */
+h3 {
+  color: #2e3f51;
+}
+
+/* line 529, ../scss/course-creator-2.scss */
+.vertically-center {
+  top: 50%;
+  transform: translateY(-50%);
+}

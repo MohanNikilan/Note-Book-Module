@@ -1,0 +1,14 @@
+{
+  "name": "epub.js",
+  "homepage": "https://github.com/futurepress/epub.js",
+  "version": "0.2.5",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.5",
+    "commit": "0dec1642f2d27e888200f9d629090f2cded11e25"
+  },
+  "_source": "https://github.com/futurepress/epub.js.git",
+  "_target": "0.2.5",
+  "_originalSource": "epub.js"
+}

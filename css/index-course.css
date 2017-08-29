@@ -1,0 +1,91 @@
+/*Blue color variables*/
+/*Orange color variables*/
+/* line 10, ../scss/index-course.scss */
+html {
+  height: 100%;
+}
+
+/* line 13, ../scss/index-course.scss */
+body {
+  background: linear-gradient(135deg, #e5a426, #ae208c);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Custom css*/
+/* line 23, ../scss/index-course.scss */
+.course_content_header {
+  width: 100%;
+  display: block;
+  height: 60px;
+  background-color: #fff;
+  padding: 5px 15px;
+  box-shadow: 1px 0px 13px #000;
+}
+/* line 31, ../scss/index-course.scss */
+.course_content_header .course-heading {
+  color: #a8bccc;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 50px;
+}
+/* line 40, ../scss/index-course.scss */
+.course_content_header .course-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 12px;
+  color: #ce7869;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+/* line 49, ../scss/index-course.scss */
+.course_content_header .course-menu ul li.active, .course_content_header .course-menu ul li:hover {
+  border-bottom: 3px solid #ffc14e;
+}
+
+/* line 56, ../scss/index-course.scss */
+.course-content {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px 0px;
+}
+/* line 63, ../scss/index-course.scss */
+.course-content ul.jqtree-tree .course-tree-node.jqtree-selected .jqtree-element {
+  background: #fff;
+}
+/* line 66, ../scss/index-course.scss */
+.course-content ul.jqtree-tree .course-tree-node > div {
+  height: 35px;
+}
+/* line 68, ../scss/index-course.scss */
+.course-content ul.jqtree-tree .course-tree-node > div a {
+  margin-right: 0.7em;
+}
+/* line 75, ../scss/index-course.scss */
+.course-content .course-unit-name {
+  padding-left: 20px;
+}
+/* line 77, ../scss/index-course.scss */
+.course-content .course-unit-name:not(:last-child) {
+  border-bottom: 1px solid #d2cfcf;
+}
+/* line 82, ../scss/index-course.scss */
+.course-content .course-unit-name > div .jqtree-title {
+  color: #3c5264;
+  font-size: 19px;
+  font-weight: 600;
+}
+/* line 90, ../scss/index-course.scss */
+.course-content .course-activity-group > div .jqtree-title {
+  color: #74a0c0;
+  font-size: 17px;
+}
+/* line 96, ../scss/index-course.scss */
+.course-content .course-activity-name > div .jqtree-title {
+  color: #74a0c0;
+  font-size: 17px;
+}

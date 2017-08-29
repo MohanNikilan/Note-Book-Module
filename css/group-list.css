@@ -1,0 +1,224 @@
+/*Blue color variables*/
+/*Orange color variables*/
+/* line 10, ../scss/group-list.scss */
+html {
+  height: 100%;
+}
+
+/* line 13, ../scss/group-list.scss */
+body {
+  background: linear-gradient(135deg, #e5a426, #ae208c);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Overridding foundation css*/
+/* line 24, ../scss/group-list.scss */
+.top-bar, .top-bar .name {
+  height: 55px;
+  background: #2e3f51;
+}
+
+/* line 30, ../scss/group-list.scss */
+.top-bar .title-area {
+  box-shadow: 0px 0.6px 3px #000;
+  z-index: 20;
+}
+/* line 34, ../scss/group-list.scss */
+.top-bar .name {
+  text-align: center;
+}
+/* line 37, ../scss/group-list.scss */
+.top-bar .name .close-menu-dropdown, .top-bar .name .side-bar-button {
+  position: absolute;
+  left: 15px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+}
+/* line 47, ../scss/group-list.scss */
+.top-bar li.toggle-topbar i {
+  color: #fff;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 55, ../scss/group-list.scss */
+.top-bar .top-bar-section ul li {
+  background: #2e3f51;
+}
+/* line 57, ../scss/group-list.scss */
+.top-bar .top-bar-section ul li > a {
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #4b5b6b;
+  color: #acd4fa;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* line 68, ../scss/group-list.scss */
+.top-bar .top-bar-section ul li:hover > a, .top-bar .top-bar-section ul li.active > a {
+  border-left-color: #ffc14e;
+  color: #ce7869;
+}
+/* line 76, ../scss/group-list.scss */
+.top-bar .top-bar-section .dropdown li.parent-link a {
+  display: none;
+}
+/* line 82, ../scss/group-list.scss */
+.top-bar .top-bar-section .side-bar-menu .add_buddy i {
+  color: #2e3f51;
+  background: #acd4fa;
+}
+
+@media screen and (min-width: 40.063em) {
+  /* line 93, ../scss/group-list.scss */
+  .top-bar .title-area {
+    box-shadow: none;
+  }
+  /* line 95, ../scss/group-list.scss */
+  .top-bar .title-area .name {
+    text-align: right;
+  }
+  /* line 102, ../scss/group-list.scss */
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+    cursor: pointer;
+    background: transparent;
+    border-bottom: 0px;
+    line-height: 52px;
+    border-left-width: 0px;
+  }
+  /* line 109, ../scss/group-list.scss */
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #ce7869;
+    border-bottom: 3px solid #ffc14e;
+  }
+  /* line 115, ../scss/group-list.scss */
+  .top-bar .top-bar-section li:not(.has-form).active a:not(.button) {
+    color: #ce7869;
+    border-bottom: 3px solid #ffc14e;
+  }
+  /* line 123, ../scss/group-list.scss */
+  .top-bar .top-bar-section li:not(.has-form).has-dropdown a:not(.button):hover {
+    color: #acd4fa;
+    border-bottom: 0px;
+  }
+  /* line 132, ../scss/group-list.scss */
+  .top-bar .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: transparent;
+  }
+  /* line 141, ../scss/group-list.scss */
+  .top-bar .top-bar-section .dropdown li:not(.has-form).active a:not(.button) {
+    background: #2e3f51;
+    color: #acd4fa;
+    border-bottom: 0px;
+    border-left-width: 0px;
+    /*&:hover {
+        color: $secondry-blue;
+        border-bottom: 0px;
+    }*/
+  }
+  /* line 154, ../scss/group-list.scss */
+  .top-bar .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    border-left-width: 0px;
+    color: #acd4fa;
+    background: #2e3f51;
+  }
+}
+/* line 166, ../scss/group-list.scss */
+.group_breadcumbs {
+  display: block;
+  margin: 15px auto;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* line 173, ../scss/group-list.scss */
+.group_tile {
+  height: 300px;
+  background: url("../images/course_backbround-1.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 22px;
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* line 182, ../scss/group-list.scss */
+.group_tile .group-name {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  margin-bottom: 15px;
+  display: block;
+}
+/* line 190, ../scss/group-list.scss */
+.group_tile .group_desc {
+  letter-spacing: 0.5px;
+  font-size: 17px;
+}
+
+/*Custom css*/
+/* line 198, ../scss/group-list.scss */
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+/* line 202, ../scss/group-list.scss */
+.icons-medium {
+  font-size: 23px;
+  line-height: 23px;
+  vertical-align: sub;
+}
+
+/* line 207, ../scss/group-list.scss */
+.icons-large {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+/* line 212, ../scss/group-list.scss */
+.round-icon {
+  border-radius: 100%;
+  height: 20px;
+  font-size: 15px;
+  padding: 2px 5px;
+}
+
+/* line 218, ../scss/group-list.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 221, ../scss/group-list.scss */
+.badge {
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  line-height: 21px;
+  text-align: center;
+  font-size: 15px;
+}
+/* line 230, ../scss/group-list.scss */
+.badge.badge-blue {
+  background-color: #acd4fa;
+  color: #fff;
+}
+
+/* line 236, ../scss/group-list.scss */
+#menu_bar_gstudio .user-profile-pic-small {
+  height: 46px;
+  width: 46px;
+  margin: 0px 10px;
+}
+/* line 242, ../scss/group-list.scss */
+#menu_bar_gstudio .loggedin-user {
+  background: #505e6c;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  margin: 5px 5px 0px 5px;
+}

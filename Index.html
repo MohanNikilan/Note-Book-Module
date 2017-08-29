@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Book Module</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/foundation-icon-fonts/foundation-icons.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,900"
+        rel="stylesheet" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="css/_clix2017.css" rel="stylesheet" type="text/css" />
+
+    <!-- Sidebar and Layout css -->
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body class="wy-body-for-nav" role="document">
+    <nav class="top-bar" data-topbar role="navigation" id="menu_bar_gstudio">
+        <ul class="title-area">
+            <li class="name show-for-medium-up">
+                <a class="loggedin-user" href="#">
+                    <img src="../images/course_backbround-1.png" alt="" />
+                </a>
+            </li>
+            <li class="name hide-for-medium-up">
+                <i class="fi-list side-bar-button"></i>
+                <i class="fi-x close-menu-dropdown hide"></i>
+                <a class="loggedin-user" href="#">
+                    <div></div>
+                </a>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar"><a href="#"><i class="icons-large fi-torso"></i>&nbsp;<span class="badge badge-blue">1</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right show-for-medium-up">
+                <li class=""><a href="#">Blog</a></li>
+                <li class=""><a href="#"><i class="icons-medium fi-info"></i>&nbsp;Help Topics</a></li>
+                <li class="has-dropdown">
+                    <a href="#">
+                        <img src="" class="user-profile-pic-small" alt=""/>
+                        Blue Parrot
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right hide-for-medium-up dropdown-menu hide">
+                <li class=""><a href="#">My Desk</a></li>
+                <li class=""><a href="#">Explore Groups</a></li>
+                <li class=""><a href="#">Blog</a></li>
+                <li class=""><a href="#"><i class="fi-info"></i>&nbsp;Help Topics</a></li>                
+            </ul>
+            <ul class="right hide-for-medium-up side-bar-menu hide">
+                <li class="">
+                    <a href="#">
+                        <i class="icons-medium fi-torso"></i>&nbsp;
+                        <span>LOGGED IN BUDDIES</span>&nbsp;
+                        <span class="badge badge-blue">1</span>
+                    </a>
+                </li>
+                <li class="has-dropdown not-click">
+                    <a href="#">
+                        <img src="" class="user-profile-pic-small" alt=""/>
+                        Blue Parrot
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="#">First link in dropdown</a></li>
+                        <li class="active"><a href="#">Active link in dropdown</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class='add_buddy'>
+                        <center>
+                            <i class="fi-plus round-icon"></i>&nbsp;
+                            <span>Add Buddy</span>
+                        </center>
+                    </a>
+                </li>
+            </ul>
+            <!-- Left Nav Section -->
+            <ul class="left show-for-large-up">
+                <li class="active"><a href="#">My Desk</a></li>
+                <li><a href="#">Explore Groups</a></li>
+            </ul>
+          </section>
+    </nav>
+    <div class="topnav" id="myTopnav">
+        <div class="lms_secondary_header">
+            <ul class="nav_menu_1">
+                <li><a href="">Overview</a></li>
+                <li><a href="" target="_blank">Lessons</a> </li>
+                <li><a href="">Resources</a> </li>
+                <li><a href="">Gallery</a> </li>
+                <li><a href="" class="selected">Notebook</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-chevron-down"
+                    aria-hidden="true"></i></a>
+            </ul>
+        </div>
+    </div>
+    <div class="wy-grid-for-nav">
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">   
+          <div class="mobile-app-toggle" data-mobile-app-toggle>
+             <button class="buttons is-active">
+              All Notes<span class="badges">2</span></button>
+             <button class="buttons">
+              Notes for<span class="badges">2</span></button>  
+         </div>  
+         <ul class="list-group">
+              <li class="list-group-item"><a href="#">This is an Example Note</a></li>
+              <li class="list-group-item active"><a href="#" style="color:#fefefe;">Another Example Note</a></li>
+              <br />
+              <li><a href="#" class="button smallbtn"><i class="fi-plus"></i>Add Note</a></li>
+          </ul>         
+        </div>        
+      </div>
+    </nav>
+    <!-- Sidebar Toggle Menu -->
+ <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">      
+   <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Note Book Module</a>
+  </nav>   
+   <!-- Right Side Responsive Menu -->
+<div class="mobile_note">
+     <div class="dropdown">
+       <span>Another Example Note</span>
+     </div>
+ <div class="dropdown">
+     <button class="dropbtn">
+       <i class="fa fa-circle" aria-hidden="true"></i>
+       <i class="fa fa-circle" aria-hidden="true"></i>
+       <i class="fa fa-circle" aria-hidden="true"></i>
+    </button>
+  <div class="dropdown-content">
+     <a href="#">
+       <i class="fi-star"></i>
+       <i class="fi-star"></i>
+       <i class="fi-star"></i>
+       <i class="fi-star"></i>
+       <i class="fi-star"></i></a>
+       <a href="#">
+        <i class="fa fa-tags" aria-hidden="true"></i>Add Tags</a> 
+        <a href="#"><i class="fa fa-sticky-note-o" aria-hidden="true"></i>Add Note</a>
+     </div>
+   </div>
+</div>   
+<!-- Left Side content -->
+<div class="wy-nav-content">
+  <div class="rst-content"> 
+     <div role="navigation" aria-label="breadcrumbs navigation" class="">
+        <ul class="wy-breadcrumbs col">
+            <li><a href="">Another Example Note</a></li>     
+            <li class="wy-breadcrumbs-aside"><a href="#"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;Add Tags</a></li>
+             <li class="wy-breadcrumbs-aside">
+             <a href="#">
+             <i class="fi-star"></i>
+             <i class="fi-star"></i>
+             <i class="fi-star"></i>
+             <i class="fi-star"></i>
+             <i class="fi-star"></i>
+           </a>
+            </li>        
+       </ul>                     
+</div>            
+<div class="col">
+    <p>        
+       Through CLIx, high school students will participate in engaging, interactive, hands-on learning experiences 
+       for the development of knowledge, skills and values, empowering them to be successful in the 21st century.
+        icon-student Students CLIx improves and strengthens student learning and skills in areas considered critical 
+        for access to further educational and employment opportunities.
+         <br /><br />
+        It supplements the high school curriculum in key areas, namely digital literacy, Communicative English, 
+        Mathematics, the Science subjects of Biology, 
+        Chemistry and Physics, and Value Education. CLIx is being implemented in four states – Chhatisgarh, Mizoram, 
+        Rajasthan, Telangana, where it will be made available to approximately 1,65,000 high school students and some 
+        4,200 teachers in over 1,000 government schools.
+    </p>
+  </div>
+  <div class="col">
+     <p>
+        Comments<span class="badges">2</span></p>
+  </div>   
+  <div class="col col2">      
+       <a href="" class="float-right">August 29, 2017, 7:21 a.m</a>
+       <a href="" class="">mohan.p@aargeestaffing.com</a>      
+      <div>
+       <br />
+       i agree with this post.i thought this was never going to end and then i saw that i did.Nice.
+      </div>
+      <br />
+       <a href="#" class="text-button-blue1"><i class="step fi-pencil size-21"></i><span class="bos4">Edit</span></a> 
+       <a href="#" class="text-button-blue1"><i class="fa fa-trash-o" aria-hidden="true"></i><span class="bos4">Delete</span></a> 
+       <a href="#" class="text-button-blue1"><i class="fa fa-reply" aria-hidden="true"></i><span class="bos4">Reply</span></a>                           
+    </div> 
+ <div class="col col2"> 
+  <form>
+    <div class="row">
+     <div class="large-12 columns">
+      <div class="row collapse">
+       <div class="small-10 columns">
+        <input type="text" placeholder="" />
+       </div>
+         <div class="small-2 columns">
+          <a href="#" class="button1 postfix">Post</a>
+        </div>
+    </div>
+  </div>
+</div>
+</form> 
+<p class="col3">
+mohan.p@aargeestaffing.com
+</p>                                 
+</div>     
+ </div>
+ </div>
+ </section>
+    </div>
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: '0.2.3',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+    <!-- Mobile Responsive Script -->
+    <script type="text/javascript" src="js/readthedocs-doc-embed.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).foundation();
+        $(function () {
+            $('.top-bar .toggle-topbar').on('click', function () {
+                $('.top-bar').find('.close-menu-dropdown, .side-bar-button').toggleClass('hide');
+                $('.top-bar-section ul.dropdown-menu').removeClass('hide');
+                $('.top-bar-section ul.side-bar-menu').addClass('hide');
+            });
+
+            $('.top-bar .side-bar-button').on('click', function () {
+                $('.top-bar').toggleClass('expanded');
+                $('.top-bar-section ul.dropdown-menu').addClass('hide');
+                $('.top-bar-section ul.side-bar-menu').removeClass('hide');
+            });
+
+            $('.top-bar .close-menu-dropdown').on('click', function () {
+                $('.top-bar .toggle-topbar').trigger('click');
+            })
+        })
+    </script>
+    <!-- Note Book toggle menu script -->
+    <script type="text/javascript">
+        $('[data-mobile-app-toggle] .buttons').click(function () { $(this).siblings().removeClass('is-active'); $(this).addClass('is-active'); });
+    </script>
+</body>
+</html>

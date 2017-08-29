@@ -1,0 +1,101 @@
+/*Blue color variables*/
+$primary-blue : #2e3f51;
+$secondry-blue : #acd4fa;
+$tertiary-blue : #719dc7;
+
+/*Orange color variables*/
+$primary-orange : #ce7869;
+$secondary-orange : #ffc14e;
+
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(135deg, #e5a426, #ae208c);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*Custom css*/
+.course_content_header {
+    width: 100%;
+    display: block;
+    height: 60px;
+    background-color: #fff;
+    padding: 5px 15px;
+    box-shadow: 1px 0px 13px #000;
+
+    .course-heading {
+        color: #a8bccc;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        line-height: 50px;
+    }
+
+    .course-menu {
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 12px;
+            color: #ce7869;
+            cursor: pointer;
+            font-size: 18px;
+            letter-spacing: 0.8px;
+
+            &.active, &:hover {
+                border-bottom: 3px solid $secondary-orange;
+            }
+        }
+    }
+}
+
+.course-content {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px 0px;
+
+    ul.jqtree-tree {
+        .course-tree-node {
+            &.jqtree-selected .jqtree-element{
+                background: #fff;
+            }
+            &>div{
+                height: 35px;
+                a {
+                    margin-right: 0.7em;
+                }
+            }
+        }
+    }
+
+    .course-unit-name {
+        padding-left: 20px;
+        &:not(:last-child){
+            border-bottom: 1px solid #d2cfcf;
+        }
+
+        >div {
+            .jqtree-title {
+                color: #3c5264;
+                font-size: 19px;
+                font-weight: 600;
+            }
+        }
+    }
+    .course-activity-group >div {
+        .jqtree-title {
+            color: #74a0c0;
+            font-size: 17px;
+        }
+    }
+    .course-activity-name >div {
+        .jqtree-title {
+            color: #74a0c0;
+            font-size: 17px;
+        }
+    }
+}

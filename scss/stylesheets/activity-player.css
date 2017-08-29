@@ -1,0 +1,256 @@
+/*Blue color variables*/
+/*Orange color variables*/
+/* line 10, ../sass/activity-player.scss */
+html {
+  height: 100%;
+}
+
+/* line 13, ../sass/activity-player.scss */
+body {
+  background: #eefaff;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 21, ../sass/activity-player.scss */
+.side-bar {
+  background: #FAFAFA;
+  padding: 32px 20px;
+  height: 100vh;
+}
+
+/* line 27, ../sass/activity-player.scss */
+.side-nav {
+  display: block;
+  margin: 0;
+  padding: 0.875rem 0;
+  list-style-type: none;
+  list-style-position: outside;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/* line 34, ../sass/activity-player.scss */
+.side-nav li {
+  margin: 0 0 0.4375rem 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+/* line 38, ../sass/activity-player.scss */
+.side-nav li a:not(.button) {
+  display: block;
+  color: #008cba;
+  margin: 0;
+  padding: 0.4375rem 0.875rem;
+}
+
+/* line 43, ../sass/activity-player.scss */
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+  background: rgba(0, 0, 0, 0.025);
+  color: #1cc7ff;
+}
+
+/* line 46, ../sass/activity-player.scss */
+.side-nav li.active > a:first-child:not(.button) {
+  color: #1cc7ff;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/* line 50, ../sass/activity-player.scss */
+.side-nav li.divider {
+  border-top: 1px solid;
+  height: 0;
+  padding: 0;
+  list-style: none;
+  border-top-color: white;
+}
+
+/* line 56, ../sass/activity-player.scss */
+.side-nav li.heading {
+  color: #008cba;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Overridding foundation css*/
+/* line 65, ../sass/activity-player.scss */
+.top-bar, .top-bar .name {
+  height: 37px;
+  background: #a61680;
+  color: #fff;
+}
+
+/* line 72, ../sass/activity-player.scss */
+.top-bar .title-area {
+  box-shadow: 0px 0.6px 3px #000;
+  z-index: 20;
+}
+/* line 76, ../sass/activity-player.scss */
+.top-bar .name {
+  text-align: center;
+}
+/* line 79, ../sass/activity-player.scss */
+.top-bar .name .close-menu-dropdown, .top-bar .name .side-bar-button {
+  position: absolute;
+  left: 15px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+}
+/* line 89, ../sass/activity-player.scss */
+.top-bar li.toggle-topbar i {
+  color: #fff;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 97, ../sass/activity-player.scss */
+.top-bar .top-bar-section ul li {
+  background: #a61680;
+}
+/* line 99, ../sass/activity-player.scss */
+.top-bar .top-bar-section ul li > a {
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #4b5b6b;
+  color: #fff;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* line 110, ../sass/activity-player.scss */
+.top-bar .top-bar-section ul li:hover > a, .top-bar .top-bar-section ul li.active > a {
+  border-left-color: #ffc14e;
+  color: #ce7869;
+}
+/* line 118, ../sass/activity-player.scss */
+.top-bar .top-bar-section .dropdown li.parent-link a {
+  display: none;
+}
+/* line 124, ../sass/activity-player.scss */
+.top-bar .top-bar-section .side-bar-menu .add_buddy i {
+  color: #2e3f51;
+  background: #acd4fa;
+}
+
+@media screen and (min-width: 40.063em) {
+  /* line 135, ../sass/activity-player.scss */
+  .top-bar .title-area {
+    box-shadow: none;
+  }
+  /* line 137, ../sass/activity-player.scss */
+  .top-bar .title-area .name {
+    text-align: right;
+  }
+  /* line 144, ../sass/activity-player.scss */
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+    cursor: pointer;
+    background: transparent;
+    border-bottom: 0px;
+    line-height: 35px;
+    border-left-width: 0px;
+  }
+  /* line 151, ../sass/activity-player.scss */
+  .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #ce7869;
+    border-bottom: 2px solid #ffc14e;
+  }
+  /* line 157, ../sass/activity-player.scss */
+  .top-bar .top-bar-section li:not(.has-form).active a:not(.button) {
+    color: #ce7869;
+    border-bottom: 2px solid #ffc14e;
+  }
+  /* line 165, ../sass/activity-player.scss */
+  .top-bar .top-bar-section li:not(.has-form).has-dropdown a:not(.button):hover {
+    color: #acd4fa;
+    border-bottom: 0px;
+  }
+  /* line 174, ../sass/activity-player.scss */
+  .top-bar .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: transparent;
+  }
+  /* line 182, ../sass/activity-player.scss */
+  .top-bar .top-bar-section .dropdown li:not(.has-form) > a:not(.button) {
+    border-left-width: 2px;
+    color: #acd4fa;
+    background: #2e3f51;
+  }
+  /* line 189, ../sass/activity-player.scss */
+  .top-bar .top-bar-section .dropdown li:not(.has-form):hover a:not(.button), .top-bar .top-bar-section .dropdown li:not(.has-form).active a:not(.button) {
+    background: #2e3f51;
+    color: #acd4fa;
+    border-bottom: 0px;
+    border-left-width: 2px;
+    /*&:hover {
+        color: $secondry-blue;
+        border-bottom: 0px;
+    }*/
+  }
+}
+/*Custom css*/
+/* line 208, ../sass/activity-player.scss */
+.icons-medium {
+  font-size: 23px;
+  line-height: 23px;
+  vertical-align: sub;
+}
+
+/* line 213, ../sass/activity-player.scss */
+.icons-large {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+/* line 218, ../sass/activity-player.scss */
+.round-icon {
+  border-radius: 100%;
+  height: 20px;
+  font-size: 15px;
+  padding: 2px 5px;
+}
+
+/* line 224, ../sass/activity-player.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 227, ../sass/activity-player.scss */
+.badge {
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  line-height: 21px;
+  text-align: center;
+  font-size: 15px;
+}
+/* line 236, ../sass/activity-player.scss */
+.badge.badge-blue {
+  background-color: #acd4fa;
+  color: #fff;
+}
+
+/* line 242, ../sass/activity-player.scss */
+#menu_bar_gstudio .user-profile-pic-small {
+  height: 46px;
+  width: 46px;
+  margin: 0px 10px;
+}
+/* line 248, ../sass/activity-player.scss */
+#menu_bar_gstudio .loggedin-user {
+  background: #505e6c;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  margin: 5px 5px 0px 5px;
+  overflow: hidden;
+}
+/* line 257, ../sass/activity-player.scss */
+#menu_bar_gstudio .loggedin-user img {
+  height: 100%;
+  width: 100%;
+}

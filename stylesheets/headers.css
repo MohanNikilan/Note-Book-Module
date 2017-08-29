@@ -1,0 +1,249 @@
+/* line 4, ../sass/headers.scss */
+body {
+  background-color: #f8f8f8;
+}
+
+/*
+    Styling for the Secondary header 1
+*/
+/* line 11, ../sass/headers.scss */
+.secondary_header_1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 17, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary {
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 19, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary > div {
+  height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 45px;
+}
+/* line 24, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary > div:not(:last-child) {
+  border-right: 1px solid #e0e0e0;
+}
+/* line 28, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .header_icon_block {
+  cursor: pointer;
+  width: 61px;
+  font-size: 27px;
+  text-align: center;
+}
+/* line 33, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .header_icon_block a {
+  color: #a9a9a9;
+}
+/* line 37, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .header_icon_block:hover {
+  background-color: #e0e0e0;
+}
+/* line 42, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .back_button {
+  background-color: #f5f5f5;
+}
+/* line 45, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .header_title {
+  position: relative;
+  width: calc(100% - 140px);
+  color: #2e4051;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  padding-left: 15px;
+}
+/* line 54, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .header_title .buttons {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+}
+/* line 61, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .settings i {
+  line-height: 45px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+/* line 66, ../sass/headers.scss */
+.secondary_header_1 .header_layer_primary .settings:hover i {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/*
+    Styling for the Secondary header 2
+*/
+/* line 80, ../sass/headers.scss */
+.secondary_header_2 {
+  background-color: #71318b;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 83, ../sass/headers.scss */
+.secondary_header_2 > div {
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* line 90, ../sass/headers.scss */
+.secondary_header_2 > div:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+/* line 94, ../sass/headers.scss */
+.secondary_header_2 > div:hover {
+  background-color: rgba(244, 244, 244, 0.3);
+}
+/* line 99, ../sass/headers.scss */
+.secondary_header_2 .header_icon {
+  font-size: 20px;
+  line-height: 45px;
+  color: #ffc14f;
+}
+/* line 105, ../sass/headers.scss */
+.secondary_header_2 .header_icon_block {
+  color: #ffc14f;
+  width: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+/* line 112, ../sass/headers.scss */
+.secondary_header_2 .header_text_block {
+  padding: 0px 15px;
+}
+/* line 114, ../sass/headers.scss */
+.secondary_header_2 .header_text_block a {
+  color: #ffc14f;
+}
+/* line 119, ../sass/headers.scss */
+.secondary_header_2 .back_button {
+  border-color: #e0e0e0;
+  background-color: rgba(244, 244, 244, 0.3);
+}
+/* line 122, ../sass/headers.scss */
+.secondary_header_2 .back_button i {
+  color: #71318b;
+}
+/* line 128, ../sass/headers.scss */
+.secondary_header_2 .settings i {
+  transition: transform .5s ease-in-out;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+}
+/* line 132, ../sass/headers.scss */
+.secondary_header_2 .settings:hover i {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+/* line 137, ../sass/headers.scss */
+.secondary_header_2 .header_title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  width: calc(100% - 676px);
+}
+/* line 146, ../sass/headers.scss */
+.secondary_header_2 .pagination:not(i) {
+  color: #a983b9;
+}
+
+/*
+    Styling for the Secondary header 3
+*/
+/* line 157, ../sass/headers.scss */
+.secondary_header_3 {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 162, ../sass/headers.scss */
+.secondary_header_3 ul {
+  margin-bottom: 0px;
+}
+/* line 164, ../sass/headers.scss */
+.secondary_header_3 ul li {
+  font-size: 18px;
+  line-height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+/* line 172, ../sass/headers.scss */
+.secondary_header_3 ul li a {
+  color: #492668;
+}
+/* line 175, ../sass/headers.scss */
+.secondary_header_3 ul li:not(:last-child):after {
+  content: "\f105";
+  color: #c3c3c3;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0px 15px 0px;
+  text-decoration: none;
+}
+
+/*
+    Common css that can be kept at a single place.
+*/
+/* line 193, ../sass/headers.scss */
+.blue_round_button {
+  background-color: #00a9ee;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 25px;
+}
+
+/* line 206, ../sass/headers.scss */
+ul.nav_menu_1 {
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+/* line 209, ../sass/headers.scss */
+ul.nav_menu_1 li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 12px 12px 9px;
+  color: #ce7869;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  border-bottom: 3px solid transparent;
+}
+/* line 219, ../sass/headers.scss */
+ul.nav_menu_1 li:hover {
+  border-bottom: 3px solid #ffc14e;
+}
+
+
+.hegt
+{
+height:300px;	
+	
+}
+
+@media screen and (max-width: 450px) {
+.secondary_header_1 .header_layer_primary > div {
+    height:83px;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+.secondary_header_1 .header_layer_primary .header_title .buttons {
+    position: absolute;
+    right: 5px;
+    top: 42px;
+}
+
+}

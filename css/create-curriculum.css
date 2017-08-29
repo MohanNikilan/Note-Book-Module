@@ -1,0 +1,259 @@
+/*Blue color variables*/
+/*Orange color variables*/
+/* line 10, ../scss/create-curriculum.scss */
+html {
+  height: 100%;
+}
+
+/* line 13, ../scss/create-curriculum.scss */
+body {
+  background: linear-gradient(135deg, #e5a426, #ae208c);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Overridding foundation css*/
+/* line 23, ../scss/create-curriculum.scss */
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+/* line 27, ../scss/create-curriculum.scss */
+.curriculum_creator_header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 5px 15px;
+  box-shadow: 1px 0px 13px #000;
+}
+/* line 34, ../scss/create-curriculum.scss */
+.curriculum_creator_header .course_heading span {
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  line-height: 50px;
+  font-size: 25px;
+}
+/* line 42, ../scss/create-curriculum.scss */
+.curriculum_creator_header .course_actions ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 12px;
+  color: #999999;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+/* line 51, ../scss/create-curriculum.scss */
+.curriculum_creator_header .course_actions ul li.active, .curriculum_creator_header .course_actions ul li:hover {
+  border-bottom: 3px solid #ffc14e;
+}
+
+/* line 59, ../scss/create-curriculum.scss */
+ul.jqtree_common {
+  position: relative;
+}
+/* line 61, ../scss/create-curriculum.scss */
+ul.jqtree_common:before {
+  content: '';
+  border-width: 0px 0px 1px 1px;
+  position: absolute;
+  left: 9px;
+  border-style: dashed;
+  border-color: #ccc;
+  top: 12px;
+  height: calc(100% - 27px);
+  width: 16px;
+}
+
+/*li.jqtree-folder {
+    position: relative;
+    &:before {
+        content: '';
+        border-width: 1px 0px 0px 0px;
+        position: absolute;
+        height: 0px;
+        left: 7px;
+        border-style: dashed;
+        border-color: #ccc;
+        top: 12px;
+        width: 15px;
+    }
+}*/
+/* line 88, ../scss/create-curriculum.scss */
+ul:not(:only-child) li:first-child {
+  position: relative;
+}
+/* line 90, ../scss/create-curriculum.scss */
+ul:not(:only-child) li:first-child:before {
+  content: '';
+  border-width: 1px 0px 0px 0px;
+  position: absolute;
+  height: 0px;
+  left: -22px;
+  border-style: dashed;
+  border-color: #ccc;
+  top: 12px;
+  width: 30px;
+}
+
+/* line 102, ../scss/create-curriculum.scss */
+.jqtree_common .jqtree-element:not(.leaf_node):not(:only-child), .jqtree_common .jqtree-element.leaf_node {
+  position: relative;
+}
+/* line 104, ../scss/create-curriculum.scss */
+.jqtree_common .jqtree-element:not(.leaf_node):not(:only-child):before, .jqtree_common .jqtree-element.leaf_node:before {
+  content: '';
+  border-width: 1px 0px 0px 0px;
+  position: absolute;
+  height: 0px;
+  left: 12px;
+  border-style: dashed;
+  border-color: #ccc;
+  top: 12px;
+  width: 10px;
+}
+
+/* line 117, ../scss/create-curriculum.scss */
+ul.jqtree-tree .jqtree-element {
+  margin-top: 15px;
+}
+
+/* line 121, ../scss/create-curriculum.scss */
+ul.jqtree-tree ul.jqtree_common {
+  margin-left: 35px;
+}
+
+/* line 125, ../scss/create-curriculum.scss */
+ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree li.jqtree-selected > .jqtree-element:hover {
+  background: transparent;
+}
+
+/* line 129, ../scss/create-curriculum.scss */
+ul.jqtree-tree .jqtree-toggler {
+  color: #aaa;
+}
+/* line 131, ../scss/create-curriculum.scss */
+ul.jqtree-tree .jqtree-toggler:hover {
+  color: #aaa;
+}
+
+/*Add asset part*/
+/* line 138, ../scss/create-curriculum.scss */
+.asset_tile {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #eee;
+  cursor: pointer;
+}
+/* line 144, ../scss/create-curriculum.scss */
+.asset_tile .asset_preview {
+  min-height: 200px;
+  background-color: #eee;
+}
+/* line 149, ../scss/create-curriculum.scss */
+.asset_tile .asset_text {
+  padding: 2px 10px;
+}
+/* line 151, ../scss/create-curriculum.scss */
+.asset_tile .asset_text .asset_title {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+/* line 156, ../scss/create-curriculum.scss */
+.asset_tile .asset_text .asset_desc {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+/* line 164, ../scss/create-curriculum.scss */
+.preview_asset {
+  background: #ccc;
+  border: 2px solid #999;
+  width: 100%;
+  min-height: 350px;
+}
+
+/* line 172, ../scss/create-curriculum.scss */
+.add_more_files {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+/* line 178, ../scss/create-curriculum.scss */
+input[type="text"], input[type="file"] {
+  margin: 0px;
+}
+
+/* line 181, ../scss/create-curriculum.scss */
+label {
+  margin-top: 1rem;
+}
+
+/* line 186, ../scss/create-curriculum.scss */
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+/* line 189, ../scss/create-curriculum.scss */
+input[type="file"]:before {
+  content: 'Select files';
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 10pt;
+  color: #cc7769;
+  border-color: #cc7769;
+  float: right;
+}
+
+/* line 205, ../scss/create-curriculum.scss */
+input[type="file"] {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/*Add asset part ends here*/
+/* line 215, ../scss/create-curriculum.scss */
+.curriculum_creator {
+  background: #fff;
+  box-shadow: 0px 2px 6px #000;
+  margin: 20px auto;
+  padding: 0px 0px;
+  min-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding: 15px;
+}
+
+/* line 225, ../scss/create-curriculum.scss */
+.orange-button {
+  color: #ce7869;
+  padding: 8px 15px;
+  background: #fff;
+  border: 2px solid #aaa;
+  font-size: 14px;
+}
+
+/* line 233, ../scss/create-curriculum.scss */
+.blue-white-button {
+  color: #fff;
+  background: #a2d0e0;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* line 240, ../scss/create-curriculum.scss */
+.button-small {
+  padding: 1px 5px;
+}
